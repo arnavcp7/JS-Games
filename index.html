@@ -1,38 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excel Clone</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-    <div class="menu-options">
-        <div class="font-style">
-            <div class="bold"><i class="fa fa-bold"></i></div>
-            <div class="italic"><i class="fa fa-italic"></i></div>
-            <div class="underline"><i class="fa fa-underline"></i></div>
-        </div>
-    </div>
-    <div class="address-content">
-        <input type="text" id="address" disabled>
-        <input type="text" id="formula">
-    </div>
-    <div class="cells-content"></div>
-    <div class="sheets">
-        <div class="add-sheet">
-            <i class="fa fa-plus"></i>
-        </div>
-        <div class="sheets-list">
-            <div class="sheet active-sheet" sheetId='0'>Sheet 1</div>
-        </div>
-    </div>
+  <div class="wrapper">
+  <div class="buttons">
+    <button class="rpsButton" value="rock">✊</button>
+    <button class="rpsButton" value="paper">🤚</button>
+    <button class="rpsButton" value="scissors">✌</button>
+  </div>
+  <div class="resultContainer">
+  <div id="player-score"></div>
+  <div id="hands"></div>
+  <div id="result"></div>
+  <button id='endGameButton'>🔴</button>
+  </div>
+  </div>
+  
+  <script src="script.js"></script>
 </body>
-<script src="./init.js"></script>
-<script src="./script.js"></script>
-<script src="./util.js"></script>
-<script src="./sheet.js"></script>
-<script src="./menu.js"></script>
+
 </html>
